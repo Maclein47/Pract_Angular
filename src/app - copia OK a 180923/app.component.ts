@@ -8,5 +8,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public title = 'principios de Angular';
-  public titulo = 'Titulo de juegos por el app.component.ts';
 }
