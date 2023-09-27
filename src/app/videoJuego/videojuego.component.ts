@@ -1,33 +1,41 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, DoCheck, OnDestroy } from '@angular/core';
 
 
 //?Decorador--------------------------------------------------------
 @Component({
     selector: 'videojuego',
     templateUrl: './videojuego.component.html',
-    // templateUrl: '../app.component.html'
-    // template:`
-    //     <h2>Componente de Videojuego</h2>
-    //     <ul> 
-    //         <li> GTA </li>
-    //         <li> Assetto Corsa </li>
-    //         <li> WRC </li>
-    //         <li> Battlefield Hardline </li>
-    //     </ul>
-    // `
 })
 
 //?Componente--------------------------------------------------------
-export class VideojuegoComponent {
+export class VideojuegoComponent implements OnInit, DoCheck, OnDestroy {
     //?Propiedades--------------------------------------------------------
     public titulo: string;
     public listado: string;
 
+    //?Metodos--------------------------------------------------------
     constructor() {
-        this.titulo = "Componente de Videojugos";
+        this.titulo = "TITULO - Componente de Videojugos";
         this.listado = "Listado de los mejores videojugos";
 
-        console.log("el componente Se ha cargado correctamente");
+        console.log("el Constructor Se ha cargado correctamente");
+    }
+
+    ngOnInit() {
+        console.log("El OnInit se ha cargado correctamente");
+    }
+
+    ngDoCheck(){
+        console.log("El DoCheck se ha cargado correctamente");
+    }
+
+    ngOnDestroy(){
+        // this.listado = "Se va a eliminar la instancia de Titulo";
+        console.log("OnDestroy ejecutado");
+    }
+
+    cambiarTitulo(){
+        this.titulo = "TITULO - Nuevo dato de Videojeugo >> titulo";
     }
 
     
