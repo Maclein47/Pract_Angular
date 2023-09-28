@@ -1,5 +1,6 @@
 //? Importo mi modulo, en este caso Component----------------
 import { Component } from '@angular/core';
+import { Zapatilla } from '../models/zapatilla';
 
 //? Defino Componente--------------------------------------------------------
 @Component({
