@@ -45,7 +45,7 @@ export class ZapatillasComponent implements OnInit {
 
         console.log(this.marcas);
     }
-
+ 
     addMarca(){
         this.marcas.push(this.mi_marca);
     }
@@ -57,6 +57,7 @@ export class ZapatillasComponent implements OnInit {
 
     onBlur(){
         console.log("Has salido del input");
+        console.log(this.marcas);
     }
     //#endregion
 }
