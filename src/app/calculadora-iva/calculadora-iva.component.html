@@ -1,0 +1,23 @@
+<p>calculadora-iva works!</p>
+
+<p>
+    aqui hiran todos los INPUTS
+</p>
+
+<p>---------------------------------------</p>
+
+<div>
+    <label for="precio">Precio:</label>
+    <input id="precio" [(ngModel)]="precio" (input)="calcularIVA()"/>
+</div>
+<div>
+    <label for="valor">Tipo de IVA (%):</label>
+    <select id="valor" [(ngModel)]="valor" (input)="calcularIVA()">
+        <option value="10">10%</option>
+        <option value="16">16%</option>
+        <option value="21">21%</option>
+    </select>
+    </div>
+<div>
+    <p>Resultado: {{ resultado }}</p>
+</div>

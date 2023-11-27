@@ -2,7 +2,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Zapatilla } from '../models/zapatilla';
 
-//? Defino Componente--------------------------------------------------------
+//? Defino Componente Decorador--------------------------------------------------------
 @Component({
     selector: 'zapatillas',
     templateUrl: './zapatillas.component.html'
@@ -58,6 +58,10 @@ export class ZapatillasComponent implements OnInit {
     onBlur(){
         console.log("Has salido del input");
         console.log(this.marcas);
+    }
+
+    mostrarPalabra(){
+        alert(this.mi_marca);
     }
     //#endregion
 }

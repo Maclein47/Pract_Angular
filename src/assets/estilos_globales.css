@@ -1,0 +1,13 @@
+.altoPrecio {
+    color: brown;
+    font-size: 24px;
+}
+
+.fondoKiwi{
+    background-color: chartreuse;
+    color: blue;
+}
+
+.subrayado{
+    text-decoration: underline;
+}

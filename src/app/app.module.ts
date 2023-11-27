@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { VideojuegoComponent } from './videoJuego/videojuego.component';
 import { ZapatillasComponent } from './zapatillas/zapatillas.component';
 import { CursosComponent } from './cursos/cursos.component';
+import { CalculadoraIVAComponent } from './calculadora-iva/calculadora-iva.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     VideojuegoComponent,
-    ZapatillasComponent
+    ZapatillasComponent,
+    CalculadoraIVAComponent
   ],
   imports: [
     BrowserModule,
