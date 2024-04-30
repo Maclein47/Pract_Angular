@@ -1,0 +1,9 @@
+<div id="entrada">
+    <input type="text" [(ngModel)]="cpostal" id="entrada_txt" 
+    placeholder="Introduce tu codigo postal"  (input)="onInput()">
+    <button (click)="mostrarNombre()">Mostrar Nombre</button>
+</div>
+
+<!-- Aquí mostraremos el mensaje -->
+<p>{{ mensaje }}</p>
+

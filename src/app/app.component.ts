@@ -13,6 +13,7 @@ export class AppComponent {
   //propiedades:
   public title = 'principios de Angular';
   public mostrar_videojuegos: boolean = true;
+  public mostrarVideojuegos01: boolean = true;
   public descripcion: string;
   public config;
   public iva10: string;
@@ -27,5 +28,9 @@ export class AppComponent {
   //metodo:
   ocultarVideojuegos(value: boolean) {
     this.mostrar_videojuegos = value;
+  }
+
+  ocultarVideojuegos01(value: boolean){
+    this.mostrarVideojuegos01 = value;
   }
 }
